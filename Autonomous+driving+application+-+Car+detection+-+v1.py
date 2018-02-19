@@ -2,16 +2,9 @@
 # coding: utf-8
 
 # # Autonomous driving - Car detection
-# 
-# Welcome to your week 3 programming assignment. You will learn about object detection using the very powerful YOLO model. Many of the ideas in this notebook are described in the two YOLO papers: Redmon et al., 2016 (https://arxiv.org/abs/1506.02640) and Redmon and Farhadi, 2016 (https://arxiv.org/abs/1612.08242). 
-# 
-# **You will learn to**:
+
 # - Use object detection on a car detection dataset
 # - Deal with bounding boxes
-# 
-# Run the following cell to load the packages and dependencies that are going to be useful for your journey!
-
-# In[3]:
 
 import argparse
 import os
@@ -32,11 +25,7 @@ from yad2k.models.keras_yolo import yolo_head, yolo_boxes_to_corners, preprocess
 get_ipython().magic('matplotlib inline')
 
 
-# **Important Note**: As you can see, we import Keras's backend as K. This means that to use a Keras function in this notebook, you will need to write: `K.function(...)`.
-
-# ## 1 - Problem Statement
-# 
-# You are working on a self-driving car. As a critical component of this project, you'd like to first build a car detection system. To collect data, you've mounted a camera to the hood (meaning the front) of the car, which takes pictures of the road ahead every few seconds while you drive around. 
+# working on a self-driving car. As a critical component of this project, you'd like to first build a car detection system. To collect data, you've mounted a camera to the hood (meaning the front) of the car, which takes pictures of the road ahead every few seconds while you drive around. 
 # 
 # <center>
 # <video width="400" height="200" src="nb_images/road_video_compressed2.mp4" type="video/mp4" controls>
