@@ -1,7 +1,5 @@
 
-# coding: utf-8
-
-# # Autonomous driving - Car detection
+# Autonomous driving - Car detection
 
 # - Use object detection on a car detection dataset
 # - Deal with bounding boxes
